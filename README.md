@@ -1,18 +1,34 @@
 # Microservices App
 
-This project is a microservices app, part of the freeCodeCamp Back End Development and APIs curriculum.  
+This is a end-to-end microservices app that counts with five different projects. The main goal for the app was to practice the Microservices architecture style. This project is part of the freeCodeCamp Back End Development and APIs curriculum.  
 
 These are the 5 projects:
-- [Timestamp](https://github.com/jvitoralb/microservices-apis-app/blob/main/backend/routes/timestamp.js)
-- [Request Header Parser](https://github.com/jvitoralb/microservices-apis-app/blob/main/backend/routes/headerParser.js)
-- [URL Shortener](https://github.com/jvitoralb/microservices-apis-app/blob/main/backend/routes/urlShorterner.js)
-- [Exercise Tracker](https://github.com/jvitoralb/microservices-apis-app/blob/main/backend/routes/exerciseTracker.js)
-- [File Metadata](https://github.com/jvitoralb/microservices-apis-app/blob/main/backend/routes/fileMetadata.js)
+- [Timestamp](#timestamp)
+- [Request Header Parser](#request-header-parser)
+- [URL Shortener](#url-shortener)
+- [Exercise Tracker](#exercise-tracker)
+- [File Metadata](#file-metadata)
 
-### [Back end](https://github.com/jvitoralb/microservices-apis-app/tree/main/backend)  
-To build the back end it was used Nodejs and Express. MongoDB and Mongoose for the database.
+### [Back end](backend)  
+To build the back end it was used Nodejs and Express following the Microservices architecture style.  
+The choice for the database was the NoSQL MongoDB with the mongoose library.  
 
-### [Front end](https://github.com/jvitoralb/microservices-apis-app/tree/main/frontend)  
-The main goal was to practice Back End Development and APIs. So the front end is pretty basic, done only with HTML and CSS.
+### [Front end](frontend)  
+The main goal was to practice Back End Development. So the front end is pretty basic, done only with HTML and CSS.
+
+## [Timestamp](backend/routes/timestamp.js)
+A simple project to convert a given date to the Unix time stamp and vice-versa. All the conversion happens in the backend where the date is sent using HTTP parameters.
+
+## [Request Header Parser](backend/routes/headerParser.js)
+A project to practice the use of HTTP header.
+
+## [URL Shortener](backend/routes/urlShorterner.js)
+A project that receives a valid URL and uses an algorithm to generate a code and then link this code to the URL and store it in a database. Then this code is sent in a request and is used to redirect the user to the original URL.
+
+## [Exercise Tracker](backend/routes/exerciseTracker.js)
+In this project, all the data is sent in the body of an HTTP POST request by the user and stored in a NoSQL database. Reading data from the DB is possible through a HTTP GET request. The search can use filters such as LIMIT, FROM, and TO, which should be sent in the request as HTTP parameters.
+
+## [File Metadata](backend/routes/fileMetadata.js)
+A simple project that receives a file from the user, downloads it and sends back the file metadata.
 
 [Live Project](https://micro-service-app.onrender.com/)!
