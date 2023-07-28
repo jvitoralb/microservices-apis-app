@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import frontend from '../config.js';
+import frontend from '../lib/path.js';
 import short from './controllers.js';
 import { validHostname } from './middleware.js';
 
