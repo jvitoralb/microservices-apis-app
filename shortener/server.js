@@ -6,7 +6,7 @@ import { normalize } from 'path';
 
 dotenv.config();
 
-const PORT = normalize(process.env.PORT || '3000');
+const PORT = normalize(process.env.PORT || '3003');
 
 app.set('port', PORT);
 
