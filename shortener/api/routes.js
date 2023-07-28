@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import frontend from '../config.js';
-import short from '../controllers/shortener.js';
-import validHostname from '../middleware/shortener.js';
+import short from './controllers.js';
+import { validHostname } from './middleware.js';
 
 
 const shortener = Router();
