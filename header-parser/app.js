@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(`${frontend}`));
 
-app.use('/header-parser', headerParser);
+app.use(headerParser);
 
 app.use(notFound);
 app.use(handleError);

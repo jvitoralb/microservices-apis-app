@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(`${frontend}`));
 
-app.use('/timestamp', timestamp);
+app.use(timestamp);
 
 app.use(notFound);
 app.use(handleError);
